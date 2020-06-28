@@ -67,39 +67,40 @@ ___
 
         > const textCheck = validateMe.input(textContent , { }, { },{ })
     
-        //Three parameters in input function.
-            > First parameter takes text-content to be validated.
+#### Three parameters in input function.
+* First parameter takes text-content to be validated.
 
-            > Second parameter takes object with following fields. This fields checks whether the poperties mentioned is present or not. It won't bother about other properties.
-            ```
-                {
-                    lowerCase:true, // or false   
-                    upperCase:true, // or false
-                    number:true,    // or false
-                    symbol:true,    // or false
-                }
+* Second parameter takes object with following fields. This fields checks whether the poperties mentioned is present or not. It won't bother about other properties.
 
-                ```
-            > Third parameter takes object with following fields. This fields checks whether the poperties mentioned is strictly present. It will not allow to have other properties.
-                ```
-                    {
-                        lowerCaseOnly:true, // or false   
-                        upperCaseOnly:true, // or false
-                        numberOnly:true,    // or false
-                        symbolOnly:true,    // or false
-                    }
+```
+        {
+            lowerCase:true, // or false(default)   
+            upperCase:true, // or false(default)
+            number:true,    // or false(default)
+            symbol:true,    // or false(default)
+        }
 
-                    ```
-                
-            > Fourth parameter takes object with limits property with default limits of characters from  1-infinity
-                ```
-                    { limits:[1,10] } // example of range 
+```
+* Third parameter takes object with following fields. This fields checks whether the poperties mentioned is strictly present. It will not allow to have other properties.
+```
+{
+    lowerCaseOnly:true, // or false(default)   
+    upperCaseOnly:true, // or false(default)
+    numberOnly:true,    // or false(default)
+    symbolOnly:true,    // or false(default)
+}
 
-                    ```
+```
+    
+* Fourth parameter takes object with limits property with default limits of characters from  1-infinity
+    ```
+        { limits:[1,10] } // example of range 
+
+    ```
 
 
 
-        * Second parameter utilization
+> Second parameter utilization
 
         > const validateMe = require('validateMe')
             
@@ -123,24 +124,24 @@ ___
 
 
 
-            * Third parameter utilization
+> Third parameter utilization
 
-            > const validateMe = require('validateMe')
-            
-            > const textContent = 'This is going to be Validated.'
+        > const validateMe = require('validateMe')
+        
+        > const textContent = 'This is going to be Validated.'
 
-            > const textCheck = validateMe.input(textContent, { }, { lowerCaseOnly:true },{1,100 })
+        > const textCheck = validateMe.input(textContent, { }, { lowerCaseOnly:true },{1,100 })
 
-            > console.log(textCheck) // {error:{message:Invalid input textContent}} 
-            
+        > console.log(textCheck) // {error:{message:Invalid input textContent}} 
+        
 
 
 
-            > const textContent = 'This is going to be validated.'
+        > const textContent = 'This is going to be validated.'
 
-            > const textCheck = validateMe.input(textContent ,{ }, { lowerCaseOnly:true, upperCaseOnly:true }, {1,100 })
+        > const textCheck = validateMe.input(textContent ,{ }, { lowerCaseOnly:true, upperCaseOnly:true }, {1,100 })
 
-            > console.log(textCheck) // {success:{message:Valid input textContent}}
+        > console.log(textCheck) // {success:{message:Valid input textContent}}
 
 
 
