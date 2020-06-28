@@ -3,7 +3,7 @@ ___
 
 ## Decription:
 
-    > This package is used to validate email, password and text. If the email, password or text is not valid it will return a error message else it returns success message.
+This package is used to validate email, password and text. If the email, password or text is not valid it will return a error message else it returns success message.
 
 ### Usage:
 
