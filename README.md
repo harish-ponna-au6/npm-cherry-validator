@@ -17,11 +17,17 @@ ___
     > const validateMe = require('validateMe')
 
     > emailId = someone@email.com
+
     > const emailCheck = validateMe.email(emailId)
+
     > console.log(emailCheck)  //{success:{message:Valid Email}}
 
+
+
     > emailId = someone@email.c
+
     > const emailCheck = validateMe.email(emailId)
+
     > console.log(emailCheck)  //{error:{message:Invalid Email}}
 
 #### Password validation:
@@ -29,11 +35,17 @@ ___
     > const validateMe = require('validateMe')
 
     > pswd = tHisiSPa$sword1  // should contain 6-20 chars and one alphabet lower, alphabet upper, symbol, number.
+
     > const passwordCheck = validateMe.password(pswd)
+
     > console.log(emailCheck)  //{success:{message:Valid Password}}
 
+
+
     > pswd = tHisiSPaswordfails  // should contain 6-20 chars and one alphabet lower, alphabet upper, symbol, number.
+
     > const passwordCheck = validateMe.password(pswd)
+
     > console.log(emailCheck)  //{error:{message: Invalid Password}}
 
 #### Custom text validation with custom settings
@@ -42,9 +54,9 @@ ___
 
         > const validateMe = require('validateMe')
 
-        > const textToBeValidated = 'This is going to be validated.'
+        > const textContent = 'This is going to be validated.'
 
-        > kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+        > const textCheck = validateMe.text(textContent)
 
 
 
