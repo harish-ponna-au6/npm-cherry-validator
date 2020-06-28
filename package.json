@@ -1,0 +1,9 @@
+{
+  "name": "validateMe",
+  "version": "1.0.0",
+  "description": "validates any email, password and can be used for validating text",
+  "main": "validateMe.js",
+  "keywords": ["validate", "validateMe","nmp-validate","validation", "npm-validation"],
+  "author": "Harish",
+  "license": "ISC"
+}
