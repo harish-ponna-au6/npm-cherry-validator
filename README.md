@@ -34,7 +34,8 @@ ___
 
 
 
-   > Password validation:
+
+   > ### Password validation:
 
     > const validateMe = require('validateMe')
 
@@ -98,13 +99,15 @@ ___
 
 
 
-            * Second parameter utilization
+        * Second parameter utilization
+
+        > const validateMe = require('validateMe')
             
-            > const textContent = 'This is going to be validated.'
+        > const textContent = 'This is going to be validated.'
 
-            > const textCheck = validateMe.input(textContent , { lowerCase:true, upperCase:true }, { },{1,100 })
+        > const textCheck = validateMe.input(textContent , { lowerCase:true, upperCase:true }, { },{1,100 })
 
-            > console.log(textCheck) // //{success:{message:Valid input textContent}}
+        > console.log(textCheck) // //{success:{message:Valid input textContent}}
 
 
 
@@ -122,6 +125,7 @@ ___
 
             * Third parameter utilization
 
+            > const validateMe = require('validateMe')
             
             > const textContent = 'This is going to be Validated.'
 
@@ -137,7 +141,7 @@ ___
             > const textCheck = validateMe.input(textContent ,{ }, { lowerCaseOnly:true, upperCaseOnly:true }, {1,100 })
 
             > console.log(textCheck) // {success:{message:Valid input textContent}}
-            
+
 
 
 **Important - You can either take second parameter or third parameter. Even though if you take both , third parameter will override second parameter.**
