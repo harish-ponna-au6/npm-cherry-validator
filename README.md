@@ -12,9 +12,11 @@ ___
 
 ### Usage:
 
-   > Password validation:
+   > Email validation:
 
     > const validateMe = require('validateMe')
+
+
 
     > emailId = someone@email.com
 
@@ -30,9 +32,13 @@ ___
 
     > console.log(emailCheck)  //{error:{message:Invalid Email}}
 
+
+
    > Password validation:
 
     > const validateMe = require('validateMe')
+
+
 
     > pswd = tHisiSPa$sword1  // should contain 6-20 chars and one alphabet lower, alphabet upper, symbol, number.
 
@@ -47,6 +53,8 @@ ___
     > const passwordCheck = validateMe.password(pswd)
 
     > console.log(emailCheck)  //{error:{message: Invalid Password}}
+
+
 
    > Custom input validation with custom settings
 
@@ -88,6 +96,8 @@ ___
 
                     ```
 
+
+
             * Second parameter utilization
             
             > const textContent = 'This is going to be validated.'
@@ -95,6 +105,8 @@ ___
             > const textCheck = validateMe.input(textContent , { lowerCase:true, upperCase:true }, { },{1,100 })
 
             > console.log(textCheck) // //{success:{message:Valid input textContent}}
+
+
 
 
             > const textContent = 'This is going to be validated.'
@@ -105,7 +117,11 @@ ___
 
 
 
+
+
+
             * Third parameter utilization
+
             
             > const textContent = 'This is going to be Validated.'
 
@@ -115,11 +131,13 @@ ___
             
 
 
+
             > const textContent = 'This is going to be validated.'
 
             > const textCheck = validateMe.input(textContent ,{ }, { lowerCaseOnly:true, upperCaseOnly:true }, {1,100 })
 
             > console.log(textCheck) // {success:{message:Valid input textContent}}
+            
 
 
 **Important - You can either take second parameter or third parameter. Even though if you take both , third parameter will override second parameter.**
