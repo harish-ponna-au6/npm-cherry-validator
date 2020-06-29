@@ -147,9 +147,9 @@ ___
 
 
 
-*ES6 syntax : *
-*const { email, password, customOptions, validate} = require('cherry-validator')*
-*Total 4 functions in the module*
+*ES6 syntax : *<br/>
+*const { email, password, customOptions, validate} = require('cherry-validator')*<br/>
+*Total 4 functions in the module*<br/>
 
 **Important - You can either use second parameter or third parameter but not both. Even though if you take both , third parameter will override second parameter.**
 
