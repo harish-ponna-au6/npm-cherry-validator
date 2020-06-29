@@ -147,7 +147,7 @@ ___
 
 
 
-*ES6 syntax : *<br/>
+*ES6 syntax :*<br/>
 *const { email, password, customOptions, validate} = require('cherry-validator')*<br/>
 *Total 4 functions in the module*<br/>
 
