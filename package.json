@@ -1,6 +1,6 @@
 {
   "name": "cherry-validator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "validates any email, password and can be used for validating text",
   "main": "cherry-validator.js",
   "keywords": [
