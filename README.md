@@ -157,7 +157,7 @@ ___
 <br/>
 <br/>
 <hr/>
-<center><i><b>Powered by Harish Ponna @2020</b></i></center>
+<div align="center"><i><b>Powered by Harish Ponna @2020</b></i></div>
 <hr/>
 <br/>
 <br/>
