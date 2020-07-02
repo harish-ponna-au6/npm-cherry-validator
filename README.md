@@ -154,13 +154,9 @@ ___
 **Important - You can either use second parameter or third parameter but not both. Even though if you take both , third parameter will override second parameter.**
 
 <br/>
-<br/>
-<br/>
 <hr/>
 <div align="center"><i><b>Powered by Harish Ponna @2020</b></i></div>
 <hr/>
-<br/>
-<br/>
 <br/>
 
 
